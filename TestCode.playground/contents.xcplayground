@@ -13,5 +13,10 @@
         <page name='BestAlbum'/>
         <page name='K-order number'/>
         <page name='Biggest Number'/>
+        <page name='GCD'/>
+        <page name='StringChanges'/>
+        <page name='QuickSort'/>
+        <page name='DFS'/>
+        <page name='BFS'/>
     </pages>
 </playground>
