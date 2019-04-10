@@ -18,5 +18,7 @@
         <page name='QuickSort'/>
         <page name='DFS'/>
         <page name='BFS'/>
+        <page name='Insertion Sort'/>
+        <page name='Merge Sort'/>
     </pages>
 </playground>
