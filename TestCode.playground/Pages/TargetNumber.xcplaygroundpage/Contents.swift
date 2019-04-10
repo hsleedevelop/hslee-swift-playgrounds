@@ -3,6 +3,33 @@
 import Foundation
 import XCPlayground
 
+
+func caculation(numbers: [Int], target: Int, index: Int, sum: Int) -> Int {
+    if index == numbers.count {
+        return sum == target ? 1 : 0
+    }
+    
+    return caculation(numbers: numbers, target: target, index: index + 1, sum: sum + numbers[index]) + caculation(numbers: numbers, target: target, index: index + 1, sum: sum - numbers[index])
+    
+}
+
+func solution3(_ numbers: [Int], _ target: Int) -> Int {
+    return caculation(numbers: numbers, target: target, index: 0, sum: 0)
+}
+
+
+func dfs(_ numbers:[Int], _ index:Int, _ target:Int, _ sum:Int) -> Int {
+    if index == numbers.count {
+        return sum == target ? 1 : 0
+    } else {
+        return dfs(numbers, index+1, target, sum + numbers[index]) + dfs(numbers, index+1, target, sum - numbers[index])
+    }
+}
+
+func solution2(_ numbers:[Int], _ target:Int) -> Int {
+    return dfs(numbers, 0, target, 0)
+}
+
 func makeTree(_ parent: Int, _ child: Int) -> (Int, Int) {
     return (parent, child)
 }
@@ -34,5 +61,5 @@ func solution(_ numbers:[Int], _ target:Int) -> Int {
     return 0
 }
 
-let result = solution([1, 2, 3, 4, 5], 3)
+let result = solution2([1, 2, 3, 4, 5], 3)
 print(result)
