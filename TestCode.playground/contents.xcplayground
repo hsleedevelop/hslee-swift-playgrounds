@@ -20,5 +20,7 @@
         <page name='BFS'/>
         <page name='Insertion Sort'/>
         <page name='Merge Sort'/>
+        <page name='TargetNumber'/>
+        <page name='SlidingWindow'/>
     </pages>
 </playground>

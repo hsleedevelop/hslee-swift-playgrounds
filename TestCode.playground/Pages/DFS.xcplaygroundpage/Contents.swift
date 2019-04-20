@@ -5,6 +5,9 @@ import XCPlayground
 
 //깊이 우선
 typealias GRAPH = [String: Set<String>]
+typealias GRAPH2 = [Int: Set<Int>]
+
+
 class DFS {
     
     func dfs_recursive(_ graph: GRAPH, start: String, visited: [String]) -> [String] {
@@ -28,6 +31,7 @@ class DFS {
             if visited.contains(node) == false {
                 visited.append(node)
                 stack.append(contentsOf: graph[node]?.subtracting(visited) ?? [])
+                print("\(node), \(visited), \(stack)")
             }
         }
         return visited
@@ -51,20 +55,25 @@ class DFS {
     }
 }
 
-let graph: GRAPH = ["A": Set(["B", "C"]),
+var graph: GRAPH = ["A": Set(["B", "C"]),
                     "B": Set(["A", "D", "E"]),
                     "C": Set(["A", "F"]),
                     "D": Set(["B"]),
                     "E": Set(["B", "F"]),
                     "F": Set(["C", "E"])]
 
+graph["K"] = Set(["A"])
+
+var graph2: GRAPH2 = [1: Set([1, 0])]
+graph2[2] = Set([2])
+
+graph2.keys.first
+
 let visited = [String]()
 let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
 let dfs2 = DFS().dfs_iterator(graph, start: "A")
 let dfs3 = DFS().dfs_paths(graph, start: "A", goal: "F")
 //print(dfs)
-//print(dfs2)
-print(dfs3)
+print(dfs2)
+//print(dfs3)
 //let sequence : Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-
