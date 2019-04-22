@@ -18,16 +18,17 @@ func solution3(_ numbers: [Int], _ target: Int) -> Int {
 }
 
 
-func dfs(_ numbers:[Int], _ index:Int, _ target:Int, _ sum:Int) -> Int {
+func dfs(_ numbers:[Int], _ index:Int, _ target:Int, _ sum:Int, _ dir: String) -> Int {
+    print("\(numbers) >> \(index) >> \(sum) >> \(dir)")
     if index == numbers.count {
         return sum == target ? 1 : 0
     } else {
-        return dfs(numbers, index+1, target, sum + numbers[index]) + dfs(numbers, index+1, target, sum - numbers[index])
+        return dfs(numbers, index+1, target, sum + numbers[index], "l") + dfs(numbers, index+1, target, sum - numbers[index], "r")
     }
 }
 
 func solution2(_ numbers:[Int], _ target:Int) -> Int {
-    return dfs(numbers, 0, target, 0)
+    return dfs(numbers, 0, target, 0, "X")
 }
 
 func makeTree(_ parent: Int, _ child: Int) -> (Int, Int) {
@@ -61,5 +62,5 @@ func solution(_ numbers:[Int], _ target:Int) -> Int {
     return 0
 }
 
-let result = solution2([1, 2, 3, 4, 5], 3)
+let result = solution2([1, 2, 3], 3)
 print(result)
