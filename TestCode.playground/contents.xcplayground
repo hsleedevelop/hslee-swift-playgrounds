@@ -23,5 +23,6 @@
         <page name='TargetNumber'/>
         <page name='BinerySearch'/>
         <page name='BinarySearchTree'/>
+        <page name='SlidingWindow'/>
     </pages>
 </playground>
