@@ -34,9 +34,13 @@ open class BFS {
                 visited.append(node)
                 //print(visited)
                 //queue.append(contentsOf: graph[node]?.subtracting(visited) ?? [])
-                for next in graph[node]?.subtracting(visited) ?? [] {
+                
+                let subs = graph[node]?.subtracting(visited) ?? []
+                print("\(node), \(visited), \(queue), subs=\(subs)")
+                for next in subs {
                     queue.append(next)
                 }
+                print("\(node), \(visited), \(queue)")
             }
         }
         return visited

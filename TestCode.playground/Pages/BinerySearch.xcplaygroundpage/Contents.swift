@@ -11,20 +11,20 @@ var str = "Hello, playground"
 //퍼포먼스가 아주 좋고 구현하는 중에 dynamic programming, recursion을 볼 수 있다.
 //insert sort (삽입정렬), bubble sort, selection sort는 O(n^2)의 성능을 갖고 있다. (참고)
 
-func binarySearch(_ array: [Int], _ item: Int) -> Int? {
+func binarySearch(_ array: [Int], _ target: Int) -> Int? {
     var low = 0
     var upper = array.count - 1
     
     while (true) {
         print(">>>>>>> \(low), \(upper)")
         let index = (low + upper) / 2
-        if array[index] == item {
+        if array[index] == target {
             print(">>> \(index)")
             return index
         } else if (low > upper) {//not found
             return nil
         } else {
-            if array[index] > item {//0 > 2
+            if array[index] > target {//0 > 2
                 upper = index - 1
             } else {// 0 < 2
                 low = index + 1

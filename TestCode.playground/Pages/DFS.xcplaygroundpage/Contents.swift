@@ -30,7 +30,10 @@ class DFS {
             let node = stack.popLast()!
             if visited.contains(node) == false {
                 visited.append(node)
-                stack.append(contentsOf: graph[node]?.subtracting(visited) ?? [])
+                
+                let subs = graph[node]?.subtracting(visited) ?? []
+                print("\(node), \(visited), \(stack), subs=\(subs)")
+                stack.append(contentsOf: subs)
                 print("\(node), \(visited), \(stack)")
             }
         }
@@ -62,6 +65,10 @@ var graph: GRAPH = ["A": Set(["B", "C"]),
                     "E": Set(["B", "F"]),
                     "F": Set(["C", "E"])]
 
+let graph3: GRAPH = ["A": Set(["B", "C"]),
+                     "B": Set(["D", "E"]),
+                     "C": Set(["F", "G"])]
+
 graph["K"] = Set(["A"])
 
 var graph2: GRAPH2 = [1: Set([1, 0])]
@@ -70,9 +77,9 @@ graph2[2] = Set([2])
 graph2.keys.first
 
 let visited = [String]()
-let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
-let dfs2 = DFS().dfs_iterator(graph, start: "A")
-let dfs3 = DFS().dfs_paths(graph, start: "A", goal: "F")
+//let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
+let dfs2 = DFS().dfs_iterator(graph3, start: "A")
+//let dfs3 = DFS().dfs_paths(graph, start: "A", goal: "F")
 //print(dfs)
 print(dfs2)
 //print(dfs3)
