@@ -45,6 +45,7 @@ class DFS {
         var result = [[String]]()
         
         while stack.count > 0 {
+            print("\(stack), \(result)")
             let node = stack.popLast()!
             for next in graph[node.0]?.subtracting(node.1) ?? [] {
                 if next == goal {
@@ -65,22 +66,21 @@ var graph: GRAPH = ["A": Set(["B", "C"]),
                     "E": Set(["B", "F"]),
                     "F": Set(["C", "E"])]
 
-let graph3: GRAPH = ["A": Set(["B", "C"]),
+let graph2: GRAPH = ["A": Set(["B", "C"]),
                      "B": Set(["D", "E"]),
-                     "C": Set(["F", "G"])]
+                     "C": Set(["F", "G"]),
+                     "D": Set(["H", "I"])]
 
 graph["K"] = Set(["A"])
 
-var graph2: GRAPH2 = [1: Set([1, 0])]
-graph2[2] = Set([2])
-
-graph2.keys.first
+var graph3: GRAPH2 = [1: Set([1, 0])]
+graph3[2] = Set([2])
 
 let visited = [String]()
 //let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
-let dfs2 = DFS().dfs_iterator(graph3, start: "A")
-//let dfs3 = DFS().dfs_paths(graph, start: "A", goal: "F")
+//let dfs2 = DFS().dfs_iterator(graph2, start: "A")
+let dfs3 = DFS().dfs_paths(graph2, start: "A", goal: "F")
 //print(dfs)
-print(dfs2)
+print(dfs3)
 //print(dfs3)
 //let sequence : Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

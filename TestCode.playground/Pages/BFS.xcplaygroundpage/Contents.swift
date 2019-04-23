@@ -13,7 +13,8 @@ let graph: GRAPH = ["A": Set(["B", "C"]),
 
 let graph2: GRAPH = ["A": Set(["B", "C"]),
                     "B": Set(["D", "E"]),
-                    "C": Set(["F", "G"])]
+                    "C": Set(["F", "G"]),
+                    "D": Set(["H", "I"])]
 //    ,
 //                    "D": Set(["B"]),
 //                    "E": Set(["B", "H"]),
@@ -23,11 +24,11 @@ let graph2: GRAPH = ["A": Set(["B", "C"]),
 let visited = [String]()
 let queue = [String]()
 //let bfs = BFS().bfs_recursive(graph, start: "A", visited: visited, queue: queue)
-let bfs2 = BFS().bfs_iterator(graph2, start: "A")
-//let bfs3 = BFS().bfs_paths(graph, start: "A", goal: "F")
+//let bfs2 = BFS().bfs_iterator(graph2, start: "A")
+let bfs3 = BFS().bfs_paths(graph2, start: "A", goal: "F")
 //print(bfs)
-print(bfs2)
-//print(bfs3)
+//print(bfs2)
+print(bfs3)
 
 
 
