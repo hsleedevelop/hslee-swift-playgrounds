@@ -15,10 +15,10 @@ func getBonusScore(_ index: Int, frames: [(Int, Int)]) -> Int {
         score = frames[i].0
         if i+1 < frames.count {
             if frames[i+1].0 == 10 {
-                
+                score += i+1 < frames.count ? frames[i+1].0 + frames[i+1].1 : 0
+            } else {
+                score += i+1 < frames.count ? frames[i+1].0 + frames[i+1].1 : 0
             }
-            score += i+1 < frames.count ? frames[i+1].0 + frames[i+1].1 : 0
-            score += i+1 < frames.count ? frames[i+1].0 + frames[i+1].1 : 0
         }
         score += i+1 < frames.count ? frames[i+1].0 + frames[i+1].1 : 0
 //        score += i+2 < frames.count ? frames[i+2].0 + frames[i+2].1 : 0
@@ -34,6 +34,7 @@ func getBonusScore(_ index: Int, frames: [(Int, Int)]) -> Int {
 func calculate(_ input: String) -> [Int] {//or 16진수?
     //var pins =
     var scores = [Int]()
+    var scores2 = [Int]()
 
     var frames = [(Int, Int)]()
     var pins = input.map { String($0) }
@@ -58,8 +59,21 @@ func calculate(_ input: String) -> [Int] {//or 16진수?
     var isStrike = false
     
     for i in 0..<frames.count {
-        score = score + getBonusScore(i, frames: frames) //curry?
+        //score = score + getBonusScore(i, frames: frames) //curry?
+        score = Int(frames[i].0 + frames[i].1)
         scores.append(score)
+    }
+    
+    score = 0
+    var prev = (0, 0)
+    for i in (0..<frames.count).reversed() {
+        score += frames[i].0 + frames[i].1
+        if frames[i].0 == 10 || prev.0 == 10 {
+            prev = frames[i]
+            continue
+        }
+        
+        scores2.append(score)
     }
     
 //    for pin in frames {
@@ -81,14 +95,15 @@ func calculate(_ input: String) -> [Int] {//or 16진수?
     //reduce?
     print(frames)
     print(scores)
+    print(scores2)
     return [0]
 }
 
 //| AAAAAAAAAAAA | [ 30, 60, 90, 120, 150, 180, 210, 240, 270, 300 ] | 12frame
 //| 82A900519A | [ 20, 39, 48, 53, 73 ] | 6frame
 
-//let result = calculate("82A900519A")
-let result = calculate("AAAAAAAAAAAA")
+let result = calculate("82A900519A")
+//let result = calculate("AAAAAAAAAAAA")
 //let result = calculate("A82A90A0519A")
 //let result = calculate("9180AA80A819181A91")
 
