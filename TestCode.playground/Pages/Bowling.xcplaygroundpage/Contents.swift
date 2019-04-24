@@ -6,6 +6,9 @@ func getMergeScore() {
     
 }
 
+//Strike = next, next
+//Spair = next
+
 func getBonusScore(_ index: Int, frames: [(Int, Int)]) -> Int {
     guard index < frames.count else { return 0 }
     
