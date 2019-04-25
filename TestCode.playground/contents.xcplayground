@@ -28,5 +28,7 @@
         <page name='BinerySearch'/>
         <page name='BinarySearchTree'/>
         <page name='Heap Sort'/>
+        <page name='Bowling'/>
+        <page name='FlattenTree'/>
     </pages>
 </playground>
