@@ -30,5 +30,6 @@
         <page name='Heap Sort'/>
         <page name='Bowling'/>
         <page name='FlattenTree'/>
+        <page name='RegEx'/>
     </pages>
 </playground>
