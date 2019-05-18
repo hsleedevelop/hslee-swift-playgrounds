@@ -31,5 +31,9 @@
         <page name='Bowling'/>
         <page name='FlattenTree'/>
         <page name='RegEx'/>
+        <page name='DevideVSteps'/>
+        <page name='John cities'/>
+        <page name='BugFIxes'/>
+        <page name='Elebator'/>
     </pages>
 </playground>

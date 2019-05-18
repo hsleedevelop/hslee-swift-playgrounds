@@ -9,7 +9,7 @@ import Foundation
 //    }
 //}
 
-DispatchQueue.global().async {
+DispatchQueue.global().sync {
     var sum = 0
     for i in 1...5 {
         //usleep(10000)
