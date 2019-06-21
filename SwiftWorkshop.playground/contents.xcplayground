@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='1_Basics_variable'/>
+        <page name='2_Basic_operation'/>
+        <page name='3_Collection_type'/>
+        <page name='4_Control_flow'/>
+        <page name='5_Function_Closure'/>
+        <page name='6_Higher_order_functions'/>
+        <page name='7_Enumerations'/>
+        <page name='8_Class_Structure'/>
+        <page name='9_Properties'/>
+        <page name='10_Methods'/>
+        <page name='11_Subscripts'/>
+        <page name='12_Inheritance'/>
+        <page name='13_Initialization'/>
+        <page name='14_Deinitialization'/>
+        <page name='15_ARC'/>
+        <page name='16_Recycled_reference'/>
+        <page name='17_Optional_Chaining'/>
+        <page name='18_Error_Handling'/>
+        <page name='19_Type_Casting'/>
+        <page name='20_Nested_Types'/>
+        <page name='21_Extensions'/>
+        <page name='22_Protocols'/>
+        <page name='23_Generics'/>
+        <page name='24_Access_Control'/>
+        <page name='25_Advanced_Operators'/>
+    </pages>
+</playground>
