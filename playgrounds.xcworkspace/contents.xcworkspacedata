@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ProtocolExam.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ReactiveCocoa.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Whats-New-In-Swift-4-2.playground">
+   </FileRef>
+   <FileRef
+      location = "group:UnitTestBasic.playground">
+   </FileRef>
+   <FileRef
+      location = "group:GPUImagePlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:The Swift Summary Book.playground">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftVerify.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ProtocolExam2.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Coding.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Rx.playground">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftWorkshop.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Exmaple.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Sequence.playground">
+   </FileRef>
+   <FileRef
+      location = "group:MeasurementsAndUnits.playground">
+   </FileRef>
+   <FileRef
+      location = "group:NetworkingUnitTest.playground">
+   </FileRef>
+   <FileRef
+      location = "group:99_miscellaneous.playground">
+   </FileRef>
+   <FileRef
+      location = "group:DepthFirstSearch.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RxSwiftPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:TestCode.playground">
+   </FileRef>
+</Workspace>
