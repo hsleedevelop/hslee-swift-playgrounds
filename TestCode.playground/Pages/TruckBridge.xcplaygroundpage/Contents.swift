@@ -55,6 +55,13 @@ func solution2(_ bridge_length:Int, _ weight:Int, _ truck_weights:[Int]) -> Int 
 }
 
 
-solution(2, 10, [7,4,5,6])
+//solution(2, 10, [7,4,5,6])
+//solution2(2, 10, [7,4,5,6])
 //solution(100, 100, [10])
 //solution(100, 100, [10,10,10,10,10,10,10,10,10,10])
+
+
+var bridge = [2,3] //[Int](repeating: 0, count: 2)
+print(bridge.count)
+let xxx = bridge.reduce(0) { $0 + $1 }
+print(xxx)

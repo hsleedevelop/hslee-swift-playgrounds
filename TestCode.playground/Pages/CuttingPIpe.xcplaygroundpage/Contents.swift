@@ -24,5 +24,3 @@ print(ar1.count)
 //print(re.count)
 //print(ar.)
 
-let state = UIControl.State.
-print(state)

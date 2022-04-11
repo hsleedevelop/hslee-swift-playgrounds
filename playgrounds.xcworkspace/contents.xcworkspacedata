@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:naver2022.playground">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Test">
+   </Group>
+   <FileRef
       location = "group:ProtocolExam.playground">
    </FileRef>
    <FileRef

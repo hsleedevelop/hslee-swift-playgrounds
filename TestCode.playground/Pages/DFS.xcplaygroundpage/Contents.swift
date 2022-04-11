@@ -77,10 +77,25 @@ var graph3: GRAPH2 = [1: Set([1, 0])]
 graph3[2] = Set([2])
 
 let visited = [String]()
-//let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
+let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
 //let dfs2 = DFS().dfs_iterator(graph2, start: "A")
-let dfs3 = DFS().dfs_paths(graph2, start: "A", goal: "F")
-//print(dfs)
-print(dfs3)
+//let dfs3 = DFS().dfs_paths(graph2, start: "A", goal: "F")
+print(dfs)
+//print(dfs3)
 //print(dfs3)
 //let sequence : Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+[[1, 2], [1, 3], [3, 6], [3, 4], [3, 5]]
+
+1 : set 2, 3
+3 ; set 4, 3, 5
+
+121 =
+
+44
+2 = a = [11]
+33 = b = [11] [11] [11]
+
+
+
