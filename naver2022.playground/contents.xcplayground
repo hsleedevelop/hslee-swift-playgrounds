@@ -5,5 +5,6 @@
         <page name='quest2'/>
         <page name='quest3'/>
         <page name='quest4'/>
+        <page name='Test04'/>
     </pages>
 </playground>

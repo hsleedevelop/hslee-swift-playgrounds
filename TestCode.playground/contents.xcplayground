@@ -35,6 +35,7 @@
         <page name='John cities'/>
         <page name='BugFIxes'/>
         <page name='Elebator'/>
-        <page name='Naver1-2022'/>
+        <page name='Dijkstra'/>
+        <page name='Dijkstra2'/>
     </pages>
 </playground>

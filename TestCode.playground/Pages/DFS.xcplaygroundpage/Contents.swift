@@ -11,11 +11,13 @@ typealias GRAPH2 = [Int: Set<Int>]
 class DFS {
     
     func dfs_recursive(_ graph: GRAPH, start: String, visited: [String]) -> [String] {
+        print("graph=\(graph), visited=\(visited)")
         var visited = visited
         if visited.contains(start) == false {
             visited.append(start)
             
             for node in graph[start]?.subtracting(visited) ?? [] {
+                print("node=\(node)")
                 visited = dfs_recursive(graph, start: node, visited: visited)
             }
         }
@@ -48,6 +50,7 @@ class DFS {
             print("\(stack), \(result)")
             let node = stack.popLast()!
             for next in graph[node.0]?.subtracting(node.1) ?? [] {
+                print("next=\(next)")
                 if next == goal {
                     result.append(node.1 + [next])
                 } else {
@@ -77,25 +80,17 @@ var graph3: GRAPH2 = [1: Set([1, 0])]
 graph3[2] = Set([2])
 
 let visited = [String]()
-let dfs = DFS().dfs_recursive(graph, start: "A", visited: visited)
+//let dfs = DFS().dfs_recursive(graph2, start: "A", visited: visited)
+let dfs2 = DFS().dfs_iterator(graph, start: "A")
 //let dfs2 = DFS().dfs_iterator(graph2, start: "A")
-//let dfs3 = DFS().dfs_paths(graph2, start: "A", goal: "F")
-print(dfs)
+//let dfs3 = DFS().dfs_paths(graph, start: "A", goal: "F")
+//print(dfs)
+print(dfs2)
 //print(dfs3)
 //print(dfs3)
 //let sequence : Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-[[1, 2], [1, 3], [3, 6], [3, 4], [3, 5]]
-
-1 : set 2, 3
-3 ; set 4, 3, 5
-
-121 =
-
-44
-2 = a = [11]
-33 = b = [11] [11] [11]
-
+//[[1, 2], [1, 3], [3, 6], [3, 4], [3, 5]]
 
 

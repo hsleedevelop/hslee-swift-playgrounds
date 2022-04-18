@@ -22,7 +22,9 @@ func insertionSort2(_ array: [Int]) -> [Int] {
     
     for x in 1..<arr.count {
         var y = x
+        print("y11111=\(y)")
         while y > 0 && arr[y] < arr[y-1] {
+            print("y2222=\(y)")
             arr.swapAt(y-1, y)
             y -= 1
         }
@@ -32,6 +34,6 @@ func insertionSort2(_ array: [Int]) -> [Int] {
 }
 
 let list = [ 10, -1, 3, 9, 2, 27, 8, 5, 1, 3, 0, 26 ]
-let result = insertionSort(list)
+let result = insertionSort2(list)
 
 print(result)

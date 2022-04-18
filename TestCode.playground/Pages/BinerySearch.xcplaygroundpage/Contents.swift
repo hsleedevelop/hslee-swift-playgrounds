@@ -2,8 +2,6 @@
 
 import Foundation
 
-var str = "Hello, playground"
-
 //BigO : O(log N)
 //정렬된 자료를 반으로 나누어 탐색하는 방법
 //주의점 : 자료는 오름차순 으로 정렬된 자료여야 한다.
@@ -33,6 +31,7 @@ func binarySearch(_ array: [Int], _ target: Int) -> Int? {
     }
 }
 
-let array = [1,2,3]
-let result = binarySearch(array, 2) ?? 0
+//let array = [1,2,3]
+let array = [1,7,2,8,3,4,6]
+let result = binarySearch(array, 4) ?? -1
 print(result)
