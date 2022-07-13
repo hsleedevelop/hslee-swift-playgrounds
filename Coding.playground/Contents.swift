@@ -40,9 +40,17 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 }
 
 
-let count = 1
-if count ~= 11 {
+let count = 0
+//if 0...11 ~= count {
+if count ~= 1 {
     print("in")
 } else {
     print("nin")
 }
+
+
+func crashAndBurn() -> Never {
+    fatalError("Something very, very bad happened")
+}
+
+crashAndBurn()

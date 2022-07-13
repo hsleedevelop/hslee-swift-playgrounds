@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:naver2022.playground">
-   </FileRef>
    <Group
-      location = "container:"
-      name = "Test">
+      location = "group:Swift Basics"
+      name = "Swift Basics">
+      <FileRef
+         location = "group:/Users/hsleeathome/Documents/Projects/SwiftLab/hslee-swift-playgrounds/Swift Basics/SwiftWorkshop.playground">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/hsleeathome/Documents/Projects/SwiftLab/hslee-swift-playgrounds/Swift Basics/The Swift Summary Book.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Whats-New-In-Swift-4-2.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Swift 5.playground">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/hsleeathome/Documents/Projects/SwiftLab/hslee-swift-playgrounds/Swift Basics/Swift 5.1.playground">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/hsleeathome/Documents/Projects/SwiftLab/hslee-swift-playgrounds/Swift Basics/Rx.playground">
+      </FileRef>
    </Group>
+   <FileRef
+      location = "group:/Users/hsleeathome/Documents/Projects/SwiftLab/hslee-swift-playgrounds/SomeTests.playground">
+   </FileRef>
    <FileRef
       location = "group:ProtocolExam.playground">
    </FileRef>
@@ -15,16 +33,7 @@
       location = "group:ReactiveCocoa.playground">
    </FileRef>
    <FileRef
-      location = "group:Whats-New-In-Swift-4-2.playground">
-   </FileRef>
-   <FileRef
       location = "group:UnitTestBasic.playground">
-   </FileRef>
-   <FileRef
-      location = "group:GPUImagePlayground.playground">
-   </FileRef>
-   <FileRef
-      location = "group:The Swift Summary Book.playground">
    </FileRef>
    <FileRef
       location = "group:SwiftVerify.playground">
@@ -34,12 +43,6 @@
    </FileRef>
    <FileRef
       location = "group:Coding.playground">
-   </FileRef>
-   <FileRef
-      location = "group:Rx.playground">
-   </FileRef>
-   <FileRef
-      location = "group:SwiftWorkshop.playground">
    </FileRef>
    <FileRef
       location = "group:Exmaple.playground">
